@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEXACO 테스트 입력</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HEXACO 테스트 결과 입력</h1>
+        <form id="hexacoForm">
+            <div class="section">
+                <h2>정직-겸손 (HONESTY-HUMILITY)</h2>
+                <label for="sincerity">정성 (Sincerity):</label>
+                <input type="number" id="sincerity" step="0.01" required>
+                <label for="fairness">공정성 (Fairness):</label>
+                <input type="number" id="fairness" step="0.01" required>
+                <label for="greedAvoidance">탐욕 회피 (Greed Avoidance):</label>
+                <input type="number" id="greedAvoidance" step="0.01" required>
+                <label for="modesty">겸손 (Modesty):</label>
+                <input type="number" id="modesty" step="0.01" required>
+            </div>
+            <div class="section">
+                <h2>감정성 (EMOTIONALITY)</h2>
+                <label for="fearfulness">공포심 (Fearfulness):</label>
+                <input type="number" id="fearfulness" step="0.01" required>
+                <label for="anxiety">불안 (Anxiety):</label>
+                <input type="number" id="anxiety" step="0.01" required>
+                <label for="dependence">의존성 (Dependence):</label>
+                <input type="number" id="dependence" step="0.01" required>
+                <label for="sentimentality">감상성 (Sentimentality):</label>
+                <input type="number" id="sentimentality" step="0.01" required>
+            </div>
+            <div class="section">
+                <h2>외향성 (EXTRAVERSION)</h2>
+                <label for="socialSelfEsteem">사회적 자존감 (Social Self-esteem):</label>
+                <input type="number" id="socialSelfEsteem" step="0.01" required>
+                <label for="socialBoldness">사회적 대담성 (Social Boldness):</label>
+                <input type="number" id="socialBoldness" step="0.01" required>
+                <label for="sociability">사교성 (Sociability):</label>
+                <input type="number" id="sociability" step="0.01" required>
+                <label for="liveliness">활발함 (Liveliness):</label>
+                <input type="number" id="liveliness" step="0.01" required>
+            </div>
+            <div class="section">
+                <h2>우호성 (AGREEABLENESS)</h2>
+                <label for="forgiveness">용서 (Forgiveness):</label>
+                <input type="number" id="forgiveness" step="0.01" required>
+                <label for="gentleness">온화함 (Gentleness):</label>
+                <input type="number" id="gentleness" step="0.01" required>
+                <label for="flexibility">유연성 (Flexibility):</label>
+                <input type="number" id="flexibility" step="0.01" required>
+                <label for="patience">인내심 (Patience):</label>
+                <input type="number" id="patience" step="0.01" required>
+            </div>
+            <div class="section">
+                <h2>성실성 (CONSCIENTIOUSNESS)</h2>
+                <label for="organization">조직성 (Organization):</label>
+                <input type="number" id="organization" step="0.01" required>
+                <label for="diligence">근면함 (Diligence):</label>
+                <input type="number" id="diligence" step="0.01" required>
+                <label for="perfectionism">완벽주의 (Perfectionism):</label>
+                <input type="number" id="perfectionism" step="0.01" required>
+                <label for="prudence">신중함 (Prudence):</label>
+                <input type="number" id="prudence" step="0.01" required>
+            </div>
+            <div class="section">
+                <h2>개방성 (OPENNESS)</h2>
+                <label for="aestheticAppreciation">미적 감상 (Aesthetic Appreciation):</label>
+                <input type="number" id="aestheticAppreciation" step="0.01" required>
+                <label for="inquisitiveness">호기심 (Inquisitiveness):</label>
+                <input type="number" id="inquisitiveness" step="0.01" required>
+                <label for="creativity">창의성 (Creativity):</label>
+                <input type="number" id="creativity" step="0.01" required>
+                <label for="unconventionality">비전통성 (Unconventionality):</label>
+                <input type="number" id="unconventionality" step="0.01" required>
+            </div>
+            <div class="section">
+                <h2>(간헐적) 이타주의 (interstitial Altruism)</h2>
+                <label for="altruism">이타주의 (Altruism):</label>
+                <input type="number" id="altruism" step="0.01" required>
+            </div>
+            <button type="button" onclick="generateResults()">결과 생성</button>
+        </form>
+        <div id="results" class="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
